@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.myapplication">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyApplication">
+        <activity
+            android:name=".ui.dashboard.reservation.VehicleActivity"
+            android:exported="false"
+            android:label = "Register Vehicle"/>
+        <activity
+            android:name=".options.account.AccountActivity"
+            android:exported="false"
+            android:label="Account"/>
+        <activity
+            android:name=".options.settings.SettingsActivity"
+            android:exported="false"
+            android:label="Settings"/>
+        <activity
+            android:name=".ui.dashboard.reservation.EmployeeReservationActivity"
+            android:exported="false"
+            android:label="Reserve permit"/>
+        <activity
+            android:name=".UserTypeActivity"
+            android:exported="false"
+            android:label="Welcome"/>
+        <activity
+            android:name=".ui.dashboard.reservation.StudentReservationActivity"
+            android:exported="false"
+            android:label="Reserve permit"/>
+        <activity
+            android:name=".ui.dashboard.reservation.CreditPaymentActivity"
+            android:exported="false"
+            android:label="Payment"/>
+        <activity
+            android:name=".parking.CrowdActivity"
+            android:exported="false"
+            android:label="Crowd"/>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCmX0fcS-aSrAA552wB9JVf7502wji8WCk" />
+
+        <activity
+            android:name=".parking.VehicleParkedActivity"
+            android:exported="false"
+            android:label="Parked"/>
+        <activity
+            android:name=".parking.CheckInActivity"
+            android:exported="false"
+            android:label="Park" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true"
+            android:label="Sign In">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
